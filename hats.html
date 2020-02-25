@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -7,71 +8,86 @@
 listview
 
 </title>
-<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
-<link rel="stylesheet"href="hats.css"" type="text/css">
+
+
+
 <meta name="viewport"content="width= device-width,initial-scale=1">
       <script type="text/javascript" src="date_time.js"></script>
-<link rel="stylesheet" href=""" type="text/css">
+<link rel="stylesheet" href=""type="text/css">
 <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-<link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> 
+
 
 <style>
-
-body{
-				max-width: 1000px;
-				max-height: auto;
-				font-family: 'Special Elite', cursive;
+	body{
+		
+		
+		background-size: auto;
+			max-width: 1000px;
+				height: auto;
+				
 				text-align: center;
-			
+				
+				  margin: 0 auto;
+				  color:ghostwhite;
+				
 				}
+				body {
+  font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
 				#wrap {
 				  width:100%;
-				  
+				  height:100%;
+				  color: gainsboro;
+				  padding: 0 auto;
+				  margin: 0 auto;
 				}
 				#date_time{
 				  text-align: center;
 				  
 				}
 				#date_time{
+					color:#666;
+					justify-content:right;
 							text-align: center;
-							font-family: 'Special Elite', cursive;
+							font-family: 'Special Elite';
+							
+								
 								}
 img{
 				width: 100%;
-				height: 100%;}
+				height: auto}
 				section{
-				position: relative;
-				
+				position: relative;t
+				height:100%;
 				}
 				header {
 								text-align: center;
-								
+								background-image: url();
 								}
-								.logo{
-
-
-								  
-								}
+						
 				section {
 				  width:100%;
+				  height:auto;
 				}
 				nav{
+					text-align: start;
 								
 						line-height:4em;
 						position: absolute;
-						left: -1em;
+						left: 1em;
 			
-				width:25%;
+				width:20%;
 								}
-.pic{height: 30em;
+.pic{
 opacity:.1;
   
   
   
   
 }
+
 nav .navbar a{
-  color: black;
+  color:#666;
   
   text-decoration: none;
 }
@@ -88,100 +104,124 @@ text-decoration-color: none;
 								float: right;
 								
 	
-								
+								padding-right:4px;
 								top:0;
-							padding-left:5px;
+							padding-left:1em;
 								}
-.flex-container {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				justify-content: start;
-				column-gap:1px;
-				
-				
 
-				
-				}
-				.item{
-								width:9em;
-								height: 10em;
-								line-height: 75px;
-								margin:1 auto;
-								padding:1 auto;
-								list-style: none;
-								
-								column-gap:1px;
-							
-								}
+
+
+						.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 5px;
+  background-color:whitesmoke;
+  margin-top:2em ;
+  height:auto;
+}
+
+.grid-container > div {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+
+}
+
+.item8 {
+  grid-area: 1 / 2 / 5 / 6;
+}
 								.container {
   position: relative;
-  width:8em;
+  width:8em;}
+  footer{
+	  width:100%;
+	  padding-top:2em;
+	  border-style: solid 2px;
+	  border-color: black;
+	  height:auto;
+	  margin:0 auto;
+  }
+  footer a{
+	  text-decoration: none;
+	  letter-spacing: 4px;
+	  color:#666;
+  }
+  footer a:hover{
+	  text-decoration: none;
+	  color:red;
+  }
+  html {
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
   
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 20%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
 }
 
-.container:hover .image {
-  opacity: 0.3;
-}
-.container:hover .middle {
-  opacity: 1;
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
 }
 
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 8px;
-  padding: 6px 6px;
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
 }
-.hat{
-				width: 18em;
-				height: 30em;
-				}
-								
-								footer{
-												position: relative;
-												margin: 0 auto;
-												padding:0;
-												
-												}
-												.nav{
-																
-																position: absolute;
-																bottom: 90%;
-																text-decoration: none;
-																}
-			
-		footer a{
-						font-size: 1em;
-						font-family: 'Special Elite', cursive;
-					text-decoration: none;
-					color: #666;
-					
-					padding-left:1em;
-						}
-						
-					footer a:hover{
-										color: red;
-										
-										}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}
+}
+
+
 
 
 </style>
@@ -189,14 +229,12 @@ text-decoration-color: none;
 <body>
   <div id="wrap">
 <headed>
- <span id="date_time"></span>
+ 
+
+
+
+<span id="date_time"></span>
             <script type="text/javascript">window.onload = date_time('date_time');</script>
-
-<div class="logo">
-<img src="https://gifimage.net/wp-content/uploads/2018/06/supreme-gif-6.gif">
-
-
-</div>
 </header>
 <section>
   <main>
@@ -206,44 +244,47 @@ text-decoration-color: none;
 
 <div><a href="shirts.html">shirts</a></div>
 
-<div><a href="">shoes</a></div>
+<div><a href="">foot-wear</a></div>
+<div><a href="">fall-wear</a></div>
+</div>
 
-<div><a href="">bags</a></div>
-
-<div><img src="https://wallpaperaccess.com/download/hypebeast-106256" class="pic"></div>
 </div>
 </nav>
 
-  <a href="jacket.html"><img class="item" src="https://images.ikrix.com/product_images/original/iKRIX-fendi-hats--caps-words-embroidery-wool-hat-00000115207f00s003.jpg"></a>
+<div class="grid-container">
+  <div class="item1"> <a href="jacket.html"><img class="item" src="https://images.ikrix.com/product_images/original/iKRIX-fendi-hats--caps-words-embroidery-wool-hat-00000115207f00s003.jpg"></a>
+  </div>
+  <div class="item2"> <a href="jacket.html"><img class="item" src="https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg?cs=srgb&dl=red-and-black-nike-fitted-cap-1124465.jpg&fm=jpg"></a>
+  </div>
+  <div class="item3">    <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
+  </div>  
+  <div class="item4">  <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
+  <div class="item5">      <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
+  </div>
+  </div>
+  <div class="item6">  <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat_1.png"></a>
+  </div>
+  <div class="item7">   <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
+  </div>
+  <div class="item8">  <img src="https://images.pexels.com/photos/1261422/pexels-photo-1261422.jpeg?cs=srgb&dl=architecture-boy-bridge-daylight-1261422.jpg&fm=jpg">
+  </div>  
+  <div class="item9">    <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
+  </div>
+  <div class="item10">   <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
+  </div>
+ 
+ 
+ 
+</div>
 
- <a href="jacket.html"><img class="item" src="https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg?cs=srgb&dl=red-and-black-nike-fitted-cap-1124465.jpg&fm=jpg"></a>
 
-  <img src="https://images.pexels.com/photos/1261422/pexels-photo-1261422.jpeg?cs=srgb&dl=architecture-boy-bridge-daylight-1261422.jpg&fm=jpg" class="hat">
-     
-      
-    <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
-      <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
-      
-       <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
-    <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
-      <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat_1.png"></a>
-  <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat_1.png"></a>
-   <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
-    <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
-      <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat15.png"></a>
-        <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
-      <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat15.png"></a>
-<a href=""><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat15.png"></a>
-    <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat2.png"></a>
-      <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat15.png"></a>
-      
-       <a href="jacket.html"><img class="item" src="https://awwlife.com/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/s/u/supreme5_panel_classical_logo_snapback_baseball_adjustable_cap_hat15.png"></a>
+  
 <footer>
 
 
-<a href="main.html">home</a>
-<a href="about.html">about</a>
-<a href="supreme.html">shop</a>
+<a href="main.html">home|</a>
+<a href="about.html">about|</a>
+<a href="supreme.html">shop|</a>
 
 
 
@@ -294,3 +335,4 @@ function date_time(id)
 </body>
 
 </html>
+
